@@ -1,0 +1,34 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+  <title>Online Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="button-container">
+    <button onclick="applyFormatting('bold')"><img src = "resources\bold-xxl.png" width ="15" height ="15"></button>
+    <button onclick="applyFormatting('underline')"><img src = "resources\format_underline_white_192x192.png" width ="15" height ="15"></button>
+    <button onclick="applyFormatting('italic')"><img src = "resource\sitalic-xxl.png" width ="15" height ="15"></button>
+    <input type="color" id="fontColor">
+    <button onclick="setTextAlignment('left')"><img src = "resources\left.png" width ="15" height ="15"></button>
+    <button onclick="setTextAlignment('right')"><img src = "resources\right.png" width ="15" height ="15"></button>
+    <button onclick="setTextAlignment('justify')"><img src = "resources\justify.png" width ="15" height ="15"></button>
+    <button onclick="setTextAlignment('center')"><img src = "resources\center.png" width ="15" height ="15"></button>
+    <button onclick="undo()"><img src = "resources\undo-4-32.png" width ="15" height ="15"></button>
+    <button onclick="redo()"><img src = "resources\action-redo-32.png" width ="15" height ="15"></button>
+  </div>
+  <div class="editor" contenteditable="true" id="editor">
+    <p>
+      Sample text
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+    
+</body>
+<!-- Author: [D.M.R.T.Diwakara] | [ct/2019/086] -->
+</html>
